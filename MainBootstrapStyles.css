@@ -3790,6 +3790,7 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  font-size: 24px;
 }
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
@@ -8185,7 +8186,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(0, 0, 0, 0.55) !important;
 }
 
 .text-secondary {
