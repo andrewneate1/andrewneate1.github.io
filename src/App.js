@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import Experience from "./Pages/Experience";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           </Routes>
         </header>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }
