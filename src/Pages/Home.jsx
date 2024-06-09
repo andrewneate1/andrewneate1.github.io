@@ -57,7 +57,8 @@ const Home = () => {
                   <span class="text-gradient d-inline">About Me</span>
                 </h2>
                 <p class="lead fw-light mb-4">
-                  My name Andrew Neate and I am a recently graduated develoepr.
+                  My name is Andrew Neate and I am a recently graduated
+                  develoepr.
                 </p>
                 <p class="text-muted">
                   My primary focus is frontend developemt with Javascript and
