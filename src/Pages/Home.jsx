@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "../Styles/MainBootstrapStyles.css";
+//import "../Styles/MainBootstrapStyles.css";
 import profileImage from "../Assets/main.png";
 
 const Home = () => {
@@ -17,7 +17,9 @@ const Home = () => {
                 </div>
               </div>
               <h1 className="display-3 fw-bolder mb-5">
-                <span className="text-gradient d-inline">Andrew Neate</span>
+                <span className="text-gradient d-inline">
+                  Andrew Neate, Graduate Developer
+                </span>
               </h1>
               <div className="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                 <Link
