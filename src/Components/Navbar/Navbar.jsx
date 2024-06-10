@@ -1,19 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ links }) => {
+const Navbar = ({ title, links, type }) => {
+  let ulString = "navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder";
+
+  if (type === "secondary") {
+    ulString = "navbar-nav mb-2 mb-lg-0 small";
+  }
+
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white py-3">
       <div className="container px-5">
         <Link
           className="navbar-brand"
           style={{ textDecoration: "none" }}
           to="/"
         >
-          <h2 className="fw-bolder text-primary">Andrew Neate Portfolio</h2>
+          <h2 className="fw-bolder text-primary">
+            {title !== undefined ? title : ""}
+          </h2>
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -21,10 +29,10 @@ const Navbar = ({ links }) => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+          <ul className={ulString}>
             {links.map((link) => (
               <li className="nav-item">
                 <Link

@@ -7,7 +7,7 @@ const Experience = () => {
     <div className="container px-5 my-5">
       <div className="text-center mb-5">
         <h1 className="display-5 fw-bolder mb-0">
-          <span className="text-gradient d-inline">Resume</span>
+          <span className="text-gradient d-inline">Experience</span>
         </h1>
       </div>
       <div className="row gx-5 justify-content-center">
@@ -17,7 +17,7 @@ const Experience = () => {
               <h2 className="text-primary fw-bolder mb-0">Experience</h2>
               <a className="btn btn-primary px-4 py-3" href={mainResume}>
                 <div className="d-inline-block bi bi-download me-2"></div>
-                Download Resume
+                Download CV
               </a>
             </div>
             <div className="card shadow border-0 rounded-4 mb-5">

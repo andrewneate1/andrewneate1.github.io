@@ -1,6 +1,5 @@
 import React from "react";
-import ContactFooter from "../Components/Projects/ContactFooter/ContactFooter";
-import Navbar from "../Components/Navbar/Navbar";
+import Navbar from "../../Navbar/Navbar";
 
 const projectLinks = [
   { text: "Currency Converter", link: "/projects/currencyConverter" },
@@ -8,13 +7,13 @@ const projectLinks = [
   { text: "ToDo List", link: "/projects/toDoList" },
 ];
 
-const Projects = () => {
+const ToDo = () => {
   return (
-    <div className="mainBody">
+    <div>
       <Navbar links={projectLinks} type="secondary" />
-      <ContactFooter />
+      ToDo List
     </div>
   );
 };
 
-export default Projects;
+export default ToDo;
