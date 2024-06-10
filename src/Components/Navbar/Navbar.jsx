@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ links }) => {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
       <div className="container px-5">
@@ -25,42 +25,17 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                style={{ textDecoration: "none" }}
-                to="/"
-              >
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                style={{ textDecoration: "none" }}
-                to="/experience"
-              >
-                Experience
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                style={{ textDecoration: "none" }}
-                to="/projects"
-              >
-                Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                style={{ textDecoration: "none" }}
-                to="/contact"
-              >
-                Contact
-              </Link>
-            </li>
+            {links.map((link) => (
+              <li className="nav-item">
+                <Link
+                  className="nav-link"
+                  style={{ textDecoration: "none" }}
+                  to={link.link}
+                >
+                  {link.text}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
