@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 
 const Navbar = ({ title, links, type }) => {
   let ulString = "navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder";
@@ -34,7 +35,7 @@ const Navbar = ({ title, links, type }) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className={ulString}>
             {links.map((link) => (
-              <li className="nav-item">
+              <li className="nav-item" key={uuidv4()}>
                 <Link
                   className="nav-link"
                   style={{ textDecoration: "none" }}
