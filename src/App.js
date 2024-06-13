@@ -14,7 +14,7 @@ import ToDo from "./Components/Projects/ToDoList/ToDo";
 const links = [
   { text: "Home", link: "/" },
   { text: "Experience", link: "/experience" },
-  { text: "Projects", link: "/projects" },
+  { text: "Projects", link: "/projects/currencyConverter" },
   { text: "Contact", link: "/contact" },
 ];
 

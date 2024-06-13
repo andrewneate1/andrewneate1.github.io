@@ -113,7 +113,7 @@ const CurrencyConverter = () => {
           <div className="result">
             <p className="rate">Rate: {info[to]}</p>
             <h2>Converted Amount:</h2>
-            <p>{input + " " + from + " = " + output.toFixed(2) + " " + to}</p>
+            <h3>{input + " " + from + " = " + output.toFixed(2) + " " + to}</h3>
           </div>
         </div>
       </div>
