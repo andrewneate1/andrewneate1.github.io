@@ -1,17 +1,23 @@
 import React from "react";
-import Navbar from "../../Navbar/Navbar";
+import { IoTrashBinSharp } from "react-icons/io5";
+import { FaEdit } from "react-icons/fa";
+import "./ToDo.css";
 
-const projectLinks = [
-  { text: "Currency Converter", link: "/projects/currencyConverter" },
-  { text: "Markdown Editor", link: "/projects/markdownEditor" },
-  { text: "ToDo List", link: "/projects/toDoList" },
-];
-
-const ToDo = () => {
+const ToDo = ({ task, toggleComplete, deleteTodo, editTodo }) => {
   return (
-    <div>
-      <Navbar links={projectLinks} type="secondary" />
-      ToDo List
+    <div className="card shadow border-1 rounded-4 m-3 mt-0">
+      <div className="card-body p-3">
+        <h4
+          onClick={() => toggleComplete(task.id)}
+          className={`${task.completed ? "completed" : ""}`}
+        >
+          {task.task}
+        </h4>
+        <div className="align-items-center inline">
+          <IoTrashBinSharp size="30px" onClick={() => deleteTodo(task.id)} />
+          <FaEdit size="30px" onClick={() => editTodo(task.id)} />
+        </div>
+      </div>
     </div>
   );
 };

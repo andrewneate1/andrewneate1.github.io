@@ -10,7 +10,7 @@
 }
 
 .WhiteSpace {
-  white-space: "pre-wrap";
+  white-space: normal !important;
 }
 
 .Result-Area {

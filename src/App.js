@@ -9,7 +9,7 @@ import Contact from "./Pages/Contact";
 import Footer from "./Components/Footer/Footer";
 import CurrencyConverter from "./Components/Projects/CurrencyConverter/CurrencyConverter";
 import MarkdownEditor from "./Components/Projects/MarkdownEditor/MarkdownEditor";
-import ToDo from "./Components/Projects/ToDoList/ToDo";
+import ToDoWrapper from "./Components/Projects/ToDoList/ToDoWrapper";
 
 const links = [
   { text: "Home", link: "/" },
@@ -37,7 +37,7 @@ function App() {
               path="/projects/markDownEditor"
               element={<MarkdownEditor />}
             />
-            <Route path="/projects/toDoList" element={<ToDo />} />
+            <Route path="/projects/toDoList" element={<ToDoWrapper />} />
           </Routes>
         </header>
       </BrowserRouter>
